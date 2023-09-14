@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheeraj</title>
+    <link rel="shortcut icon" href="image/profile.png" type="image/x-icon">
+
+    <!-- scroll animation liank -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- scroll animation liank -->
+
+    <link rel="stylesheet" href="dheerajweb.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><a href="index.html">Dheeraj</a><div></div></div>
+        <nav>
+            <ul>
+                <!-- <li>Home</li> -->
+                <li><a href="sorce.html">Sorce</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="btn">
+        <div class="dark" id="icon"><ion-icon name="contrast-outline"></ion-icon></div>
+    </div>
+    <div class="home">
+        <div class="page1">
+                <p>Hello world! i'am Dheeraj khatri,a HTML ,CSS and JS based website,i hop you like this environment.You must be the change you wish to see in the world.</p>
+                <div class="mail">
+                    <div class="mailicon"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+                    <div class="textM" onclick="copyText()"><a href="#">Copy Email?</a></div>
+                </div>
+        </div>
+        <div class="page2">
+            <div class="pic" data-aos="fade-right"><img src="image/InfinityWar.jpg"></div>
+            <div class="contant" data-aos="fade-left">
+                <h2>My favorite movie!</h2>
+                <p>Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed ...</p>
+            </div>
+        </div>
+        <div class="page3">
+            <div class="vid" data-aos="fade-right">
+                <video id="myvideo" poster="image/batman.jpg" loop muted onmouseover="this.play();" onmouseout="this.pause();">
+                    <source src="image/batman.mp4" type="video/webm">
+                </video>
+            </div>
+            <div class="contant" data-aos="fade-left">
+                <h2>Best Superhero!</h2>
+                <p>When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question ...</p>
+            </div>
+        </div>
+        <div class="page4">
+            <div class="textF"><h2>Friend's</h2></div>
+            <div class="cont">
+                <div class="img" data-aos="fade-right">
+                    <img src="image/Frind/aaman.jpg">
+                    <div class="contant">
+                        <h1>Amanullah</h1>
+                        <p>CSC-23S-S01</p>
+                    </div>
+                </div>
+                <div class="img" data-aos="fade-left">
+                    <img src="image/Frind/miraj.jpg">
+                    <div class="contant">
+                        <h1>Mairaj soomro</h1>
+                        <p>CSC-23S-S42</p>
+                    </div>
+                </div>
+                <div class="img" data-aos="fade-right">
+                    <img src="image/Frind/israr.jpg">
+                    <div class="contant">
+                        <h1>Israr ahmad</h1>
+                        <p>CSC-23S-S14</p>
+                    </div>
+                </div>
+                <div class="img" data-aos="fade-left">
+                    <img src="image/Frind/pawan.jpg">
+                    <div class="contant">
+                        <h1>Pawan kumar</h1>
+                        <p>CSC-23S-S47</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page5">
+            <div class="vid" data-aos="fade-right">
+                <video id="myvideo1" loop muted onmouseover="this.play();" onmouseout="this.pause();">
+                    <source src="image/gojo.mp4" type="video/webm">
+                </video>
+            </div>
+            <div class="contant" data-aos="fade-left">
+                <h2>Favorite anime CH Gojo!</h2>
+                <p>He is a special grade jujutsu sorcerer and widely recognized as the strongest in the world. Satoru is the pride of the Gojo Family, the first person to inherit ...</p>
+            </div>
+        </div>
+        <div class="page6">
+            <div class="vid" data-aos="fade-right">
+                <video id="myvideo2" loop muted onmouseover="this.play();" onmouseout="this.pause();">
+                    <source src="image/spiderman.mp4" type="video/webm">
+                </video>
+            </div>
+            <div class="contant" data-aos="fade-left">
+                <h2>Best Spider-man ever!</h2>
+                <p>Spider-Man is a superhero appearing in American comic books published by Marvel Comics. Created by writer-editor Stan Lee and artist Steve Ditko, ...</p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy;copy | Dheeraj | khatri</p>
+            <p>We all are bad in same one story</p>
+            <p>&rightleftarrows;</p>
+        </footer>
+    </div>
+    <!-- icon script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- icon script -->
+    <!-- copy email scripy -->
+    <script>
+        function copyText(){
+            navigator.clipboard.writeText("dheerajkum838@gmail.com");
+        }
+    </script>
+    <!-- copy email scripy -->
+    <!-- scroll script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- scroll script -->
+    <!-- <script>
+        var icon =document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark_them");
+            icon.classList.toggle("animation_rotat");
+        } 
+    </script> -->
+    <script>
+        let options ={
+            root :null,
+            rootMargin:'0px',
+            threshold:1.0
+        };
+        let callback = (entries, observer)=>{
+            entries.forEach(entry => {
+                if (entry.target.id =='myvideo')
+                {
+                    if(entry.isIntersecting){
+                        entry.target.play();
+                    }
+                    else{
+                        entry.target.pause();
+                    }
+                }
+                if (entry.target.id =='myvideo1')
+                {
+                    if(entry.isIntersecting){
+                        entry.target.play();
+                    }
+                    else{
+                        entry.target.pause();
+                    }
+                }
+                if (entry.target.id =='myvideo2')
+                {
+                    if(entry.isIntersecting){
+                        entry.target.play();
+                    }
+                    else{
+                        entry.target.pause();
+                    }
+                }
+            });
+        }
+        let observer = new IntersectionObserver(callback,options);
+        observer.observe(document.querySelector('#myvideo'))
+        observer.observe(document.querySelector('#myvideo1'))
+        observer.observe(document.querySelector('#myvideo2'))
+    </script>
+    <script src="DheerajJS.js"></script>
+
+</body>
+</html>

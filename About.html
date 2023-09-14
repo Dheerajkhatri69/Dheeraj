@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheeraj Contact</title>
+    <link rel="stylesheet" href="dheerajweb.css">
+    <style>
+    body{
+        background-color: var(--textcolor);
+        height: 100vh;
+    }
+    .nav{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    background-color: transparent;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 10;
+}
+    .nav nav ul li:nth-child(2):after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primarycolor);
+    height: 2px;
+    width: 100px;
+    opacity: 0.5;
+    transition: all 0.5s;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><a href="index.html">Dheeraj</a><div></div></div>
+        <nav>
+            <ul>
+                <!-- <li>Home</li> -->
+                <li><a href="sorce.html">Sorce</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="btn">
+        <div class="dark" id="icon"><ion-icon name="contrast-outline"></ion-icon></div>
+    </div>
+    
+    <div class="contact">
+        <h2>About</h2>
+        <div class="profile">
+            <img src="image/profile.png">
+            <h3>I'am <span class="multitext"></span></h3>
+        </div>
+        <div class="extra">
+            <div class="email">
+                <div onclick="copytext()"><a href="#">Email</a></div>
+            </div>
+            <div class="media">
+                <div>Also available on</div>
+                <ul>
+                    <li><a href="https://instagram.com/dheerajkhatri89?utm_source=qr&igshid=MzNlNGNkZWQ4Mg" target="_blank">
+                        <span><ion-icon name="logo-instagram"></ion-icon></span>
+                        <span>Instagram</span>
+                    </a></li>
+                    <li><a href="https://twitter.com/Dheeraj10753517" target="_blank">
+                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                        <span>Twitter</span>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/dheeraj-khatri-001176291" target="_blank">
+                        <span><ion-icon name="logo-linkedin"></ion-icon></span> 
+                        <span>LinkedIn</span>
+                    </a></li>
+                    <li><a href="https://youtube.com/@Couragethevlog?si=ceM_6UqpK-hjWGZg" target="_blank">
+                        <span><ion-icon name="logo-youtube"></ion-icon></span>
+                        <span>Youtube</span>
+                    </a></li>
+                </ul>
+                <div>Feel free to contact me!</div>
+            </div>
+            <div class="intro">
+                <div>I'm a student at <a href="https://smiu.edu.pk/" target="_blank">SMIU</a>. I am doing my degree in BSCS, interactive design at the web development and coding, I can work with amazing people around the world and learn from great studios.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- icon script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function copytext(){
+            navigator.clipboard.writeText("dheerajkum838@gmail.com");
+        }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    var typingEffect = new Typed(".multitext",{
+        strings : ["Coder","Youtuber","Web Designer"],
+        loop: true,
+        typeSpeed:100,
+        backSpeed:80,
+        backDelay:1500
+    })
+    </script>
+
+    <script src="DheerajJS.js"></script>
+</body>
+</html>
