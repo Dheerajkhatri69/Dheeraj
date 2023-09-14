@@ -1023,6 +1023,11 @@ footer{
     }
     /* about css */
 }
+@media screen and (max-width:420px){
+    .page1{
+        height: 90vh;
+       }
+}
 @media screen and (max-width:410px){
     .nav nav ul{
         display: flex;
