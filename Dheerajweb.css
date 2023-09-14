@@ -1027,6 +1027,11 @@ footer{
     .page1{
         height: 90vh;
        }
+    .btn{
+        width: 100%;
+        top:10vh;
+        justify-content: end;
+    }
 }
 @media screen and (max-width:410px){
     .nav nav ul{
