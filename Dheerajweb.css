@@ -464,6 +464,7 @@ footer{
     font-size: 2.5em;
     cursor: pointer;
     align-items: center;
+    justify-content: space-between;
     border-bottom:3px solid var(--primarycolor) ;
     color: var(--primarycolor);
     overflow: hidden;
