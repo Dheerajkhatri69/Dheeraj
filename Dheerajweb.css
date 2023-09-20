@@ -1098,9 +1098,160 @@ footer{
     }
     /* about css */
 }
-@media screen and (max-width:380px){
-    .nav .logo{
+@media screen and (max-width:380px) {
+    .page1 {
+        height: 96vh;
+    }
+
+    .nav .logo {
         font-size: 1.1em;
     }
 
+    .page4 .cont .img img {
+        width: 140px;
+    }
+
+    .page4 .cont .img {
+        width: 140px;
+        height: 186.6px;
+    }
+
+    .page4 .cont .contant {
+        top: 187px;
+        padding: 5px 10px;
+        transition: all 0.5s;
+    }
+    
+    .page4 .cont .img:hover .contant {
+        top: 130px;
+    }
+    
+    .page4 .cont .contant h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:330px) {
+    .home {
+        padding: 2%;
+    }
+
+    .page1 p {
+        width: 250px;
+        font-size: 1.6em;
+    }
+
+    .page1 .mail {
+        width: 250px;
+        font-size: 1.6em;
+    }
+
+    .nav .logo {
+        font-size: 1.7em;
+    }
+
+    .nav nav ul li {
+        margin: 0 5px;
+        font-size: 0.9em;
+    }
+
+    .page2 .pic,
+    .page3 .vid,
+    .page5 .vid,
+    .page6 .vid {
+        width: 250px;
+        height: 301px;
+    }
+
+    .page2 .pic img,
+    .page3 .vid video,
+    .page5 .vid video,
+    .page6 .vid video {
+        width: 250px;
+    }
+    .page2 .pic img{
+        height: 340px;
+    }
+
+    .page2 .contant,
+    .page3 .contant,
+    .page5 .contant,
+    .page6 .contant {
+        width: 250px;
+        height: 200px;
+    }
+
+    .page2 .contant h2,
+    .page3 .contant h2,
+    .page5 .contant h2,
+    .page6 .contant h2 {
+        font-size: 1.2em;
+    }
+
+    .page2 .contant p,
+    .page3 .contant p,
+    .page5 .contant p,
+    .page6 .contant p {
+        font-size: 1em;
+    }
+
+    .page4 .cont{
+        width: 300px;
+        height: 300px;
+    } 
+
+    .page4 .cont .img img {
+        width: 120px;
+    }
+
+    .page4 .cont .img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .page4 .cont .contant {
+        top: 161px;
+        padding: 5px 10px;
+        transition: all 0.5s;
+    }
+    
+    .page4 .cont .img:hover .contant {
+        top: 101px;
+    }
+    
+    .page4 .cont .contant h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 18px;
+    }
+    
+    /* contact */
+    .contact .extra .intro {
+        width: 250px;
+    }
+
+    /* contact */
+}
+@media screen and (max-width:285px) {
+    .home {
+        padding: 2%;
+    }
+
+    .page1 p {
+        width: 230px;
+        font-size: 1.3em;
+    }
+
+    .page1 .mail {
+        width: 230px;
+        font-size: 1.3em;
+    }
+
+    .nav .logo {
+        font-size: 1.4em;
+    }
+
+    .nav nav ul li {
+        margin: 0 5px;
+        font-size: 0.7em;
+    }
 }
