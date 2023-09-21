@@ -4,20 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dheeraj Upload</title>
-    <link rel="shortcut icon" href="image/profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="dheerajweb.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
-            background-color:#385159;
+
+        body {
+            background-color: var(--textcolor);
+            height: 100vh;
+        }
+
+        .uploadcont {
+            min-width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #385159;
+        }
+
+        .nav {
+            width: 100vw;
+            height: 0px;
+            position: sticky;
+            top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            z-index: 10;
+        }
+
+        .nav nav ul li:nth-child(1):after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primarycolor);
+            height: 2px;
+            width: 100px;
+            opacity: 0.5;
+            transition: all 0.5s;
+        }
+
+        .sorce h2 .upload a {
+            color: var(--primarycolor);
+        }
+
+        .main{
+            width: 400px;
+            height: 400px;
+        }
+        
+        @media screen and (max-width:480px){
+            .main{
+                width: 300px;
+                height: 300px;
+            }   
+        }
+        @media screen and (max-width:350px){
+            .main{
+                width: 250px;
+                height: 250px;
+            }   
         }
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbybrzEqOcmi9-xhZMXGMpIr6st6xkWqhuAdMOP-M6ATv0gRJF6VM96x_TtxjpQoqejXnQ/exec" 
-    height="800px" width="100%" style="border: none;"></iframe>
+    <div class="nav">
+        <div class="logo"><a href="index.html">Dheeraj</a>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <!-- <li>Home</li> -->
+                <li><a href="sorce.html">Sorce</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="uploadcont">
+        <iframe class="main"
+            src="https://script.google.com/macros/s/AKfycbybrzEqOcmi9-xhZMXGMpIr6st6xkWqhuAdMOP-M6ATv0gRJF6VM96x_TtxjpQoqejXnQ/exec"
+            scrolling="none" style="border: none; border-radius: 20px;"></iframe>
+    </div>
+
+    
+    <script src="dheerajJS.js"></script>
 </body>
 </html>
