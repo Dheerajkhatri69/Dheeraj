@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance</title>
+    <link rel="shortcut icon" href="image/profile.png" type="image/x-icon">
     <style>
         *{
             margin: 0;
@@ -75,11 +76,11 @@
     <form name="submit-to-google-sheet">
         <div>
             <label>FULL NAME:</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
         </div>
         <div>
             <label>ROLL NO:</label>
-            <input type="text" name="roll_no" placeholder="CSC-23S-">
+            <input type="text" name="roll_no" placeholder="CSC-23S-" required>
         </div>
         <input type="submit" name="submit" class="submit">
         <div class="ok" id="ok">
