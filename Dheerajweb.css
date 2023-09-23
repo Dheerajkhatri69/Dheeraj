@@ -611,6 +611,7 @@ footer{
     color: var(--primarycolor);
 }
 .sorce .Downloadjava .text{
+    font-size: small;
     color: var(--primarycolor);
 }
 .sorce .Downloadjava button{
