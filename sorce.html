@@ -48,6 +48,9 @@
         .sorce .Downloadjava .open {
             color: var(--primarycolor);
             font-size: 20px;
+            width: 75px;
+            display: flex;
+            justify-content: center;
         }
 
         .sorce .Downloadjava .up {
@@ -122,13 +125,13 @@
         var data = document.getElementById("data");
         down.onclick = function () {
             down.style.display = "none";
-            up.style.display = "inline";
+            up.style.display = "flex";
             // data.style.display = "inline";
             data.classList.add("animatdata");
         }
         up.onclick = function () {
             up.style.display = "none";
-            down.style.display = "inline";
+            down.style.display = "flex";
             // data.style.display = "none";
             data.classList.remove("animatdata");
         }
