@@ -1256,3 +1256,14 @@ footer{
         font-size: 0.7em;
     }
 }
+::-webkit-scrollbar{
+    width: 0;
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8px;
+    border-radius: 10px;
+    background: linear-gradient(to top,var(--primarycolor),var(--textcolor));
+}
