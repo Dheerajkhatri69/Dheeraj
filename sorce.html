@@ -37,7 +37,22 @@
     }
     .sorce h2 .upload a{
             color: var(--primarycolor);
-        }    
+        }
+        .data {
+            transform: translateY(-100%) rotateX(90deg);
+            transition: all 0.5s;
+        }
+        .animatdata{
+            transform: none;
+        }
+        .sorce .Downloadjava .open {
+            color: var(--primarycolor);
+            font-size: 20px;
+        }
+
+        .sorce .Downloadjava .up {
+            display: none;
+        }
         
     </style>
 </head>
@@ -77,12 +92,47 @@
             <div class="icon"><img src="image/Icon/arab.png"></div>
             <div class="text">Al Arabiyyah Bayna Yadayk Book</div>
             <button><a href="https://www.mediafire.com/file/gdaarahsuom89a8/Al_Arabiyyah_Bayna_Yadayk_Book.pdf/file" target="_blank" download>Download</a></button>
+        </div><div class="Downloadjava">
+            <div class="icon"><img src="image/Icon/communication.png"></div>
+            <div class="text">Comunication and presentation skills</div>
+            <div class="open down" id="down"><ion-icon name="caret-down-outline"></ion-icon></div>
+            <div class="open up" id="up"><ion-icon name="caret-up-outline"></ion-icon></div>
+        </div>
+        <div id="data" class="data">
+            <div class="Downloadjava">
+                <div class="icon"><img src="image/Icon/communication.png"></div>
+                <div class="text">Types of communication</div>
+                <button><a href="Download/Types of communication.pptx" download>Download</a></button>
+            </div>
+            <div class="Downloadjava">
+                <div class="icon"><img src="image/Icon/communication.png"></div>
+                <div class="text">Offline vs online ED</div>
+                <button><a href="Download/offvsonbanar.jpg" download>Download</a></button>
+            </div>
         </div>
     </div>
 
     <!-- icon script -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var down = document.getElementById("down");
+        var up = document.getElementById("up");
+        var data = document.getElementById("data");
+        down.onclick = function () {
+            down.style.display = "none";
+            up.style.display = "inline";
+            // data.style.display = "inline";
+            data.classList.add("animatdata");
+        }
+        up.onclick = function () {
+            up.style.display = "none";
+            down.style.display = "inline";
+            // data.style.display = "none";
+            data.classList.remove("animatdata");
+        }
+    </script>
 
     <script src="DheerajJS.js"></script>
 </body>
