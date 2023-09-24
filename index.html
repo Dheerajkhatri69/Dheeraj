@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="Dheerajweb.css">
     <style>
+        html{
+            overflow-x: hidden;
+        }
         body{
         background-color: var(--textcolor);
         width: 100vw;
@@ -20,6 +23,7 @@
     </style>
 </head>
 <body>
+    <div id="progressbar"></div>
     <div class="nav">
         <div class="logo"><a href="index.html">Dheeraj</a><div></div></div>
         <nav>
@@ -185,6 +189,16 @@
         observer.observe(document.querySelector('#myvideo'))
         observer.observe(document.querySelector('#myvideo1'))
         observer.observe(document.querySelector('#myvideo2'))
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop(),
+            dh = $(document).height(),
+            wh = $(window).height();
+            scrollPercent =(scroll / (dh-wh)) * 100;
+            $('#progressbar').css('height', scrollPercent+'%');
+        })
     </script>
     <script src="DheerajJS.js"></script>
 
