@@ -119,7 +119,7 @@
   /* page1 start */
 .page1{
     width: 100%;
-    height: 96vh;
+    height: 96dvh;
     position: relative;
     display: flex;
     align-items: center;
@@ -238,7 +238,7 @@
 /* page2 start */
 .page2,.page6{
     width: 100%;
-    height: 96vh;
+    height: 96dvh;
     margin-top:20px;
     position: relative;
     border-top: 2px solid var(--primarycolor);
@@ -294,7 +294,7 @@
 /* page3 start */
 .page3,.page5{
     width: 100%;
-    height: 96vh;
+    height: 96dvh;
     margin-top:20px;
     position: relative;
     border-top: 2px solid var(--primarycolor);
@@ -350,7 +350,7 @@
 /* page4 frinds start */
 .page4{
     width: 100%;
-    height: 96vh;
+    height: 96dvh;
     margin-top:20px;
     border-top: 2px solid var(--primarycolor);
     border-bottom: 2px solid var(--primarycolor);
