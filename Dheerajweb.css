@@ -9,6 +9,29 @@
     --primarycolor: #1e1e1e ;
     --textcolor: #fff6e5;
 }
+
+/* loading line */
+.head .line{
+    background-color: transparent;
+    width: 0vw;
+    height: 2px;
+    border-radius: 10px;
+    animation-name: colore;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes colore {
+    from{
+        background-color: transparent;
+        width: 0vw;
+    }
+    to{
+        background-color: #f79b1a;
+        width: 100vw;
+    }
+}
+/* loading line */
 .dark_them{
     --primarycolor: #fff6e5 ;
     --textcolor:  #1e1e1e;
