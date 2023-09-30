@@ -1281,13 +1281,10 @@ footer{
     }
 }
 ::-webkit-scrollbar{
-    width: 0;
-}
-#progressbar{
-    position: fixed;
-    top: 0;
-    right: 0;
     width: 8px;
-    border-radius: 10px;
-    background: linear-gradient(to top,var(--primarycolor),var(--textcolor));
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent,var(--primarycolor)) ;
+    border-radius: 6px;
+    transition: all 0.5s;
 }
