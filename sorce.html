@@ -38,11 +38,16 @@
     .sorce h2 .upload a{
             color: var(--primarycolor);
         }
-        .data {
+
+        .data{
+            display: none;
             transform: translateY(-50%) rotateX(90deg);
-            transition: all 0.5s;
+            transition: all 0.3s;
         }
+
         .animatdata{
+            transition: all 0.3s;
+            display: inline;
             transform: none;
         }
         .sorce .Downloadjava .open {
@@ -137,6 +142,29 @@
                 <button><a href="Download/Purposeful Writing.pptx" download>Download</a></button>
             </div>
         </div>
+        <div class="Downloadjava">
+            <div class="icon"><img src="image/Icon/letter-d.png"></div>
+            <div class="text">Digital Logic Design</div>
+            <div class="open down" id="down1"><ion-icon name="caret-down-outline"></ion-icon></div>
+            <div class="open up" id="up1"><ion-icon name="caret-up-outline"></ion-icon></div>
+        </div>
+        <div id="data1" class="data">
+            <div class="Downloadjava">
+                <div class="icon"><img src="image/Icon/letter-d.png"></div>
+                <div class="text">Course outline</div>
+                <button><a href="Download/Course outline of CEN201 Digital Logic and Design Fall 2023.pdf" download>Download</a></button>
+            </div>
+            <div class="Downloadjava">
+                <div class="icon"><img src="image/Icon/letter-d.png"></div>
+                <div class="text">DLD Lecture #01 & 02</div>
+                <button><a href="Download/DLD Lecture #01 & 02.pdf" download>Download</a></button>
+            </div>
+            <div class="Downloadjava">
+                <div class="icon"><img src="image/Icon/letter-d.png"></div>
+                <div class="text">DLD Lecture #03</div>
+                <button><a href="Download/DLD Lecture #03.pdf" download>Download</a></button>
+            </div>
+        </div>
     </div>
 
     <!-- icon script -->
@@ -147,17 +175,29 @@
         var down = document.getElementById("down");
         var up = document.getElementById("up");
         var data = document.getElementById("data");
+
+        var down1 = document.getElementById("down1");
+        var up1 = document.getElementById("up1");
+        var data1 = document.getElementById("data1");
         down.onclick = function () {
             down.style.display = "none";
             up.style.display = "flex";
-            // data.style.display = "inline";
             data.classList.add("animatdata");
         }
         up.onclick = function () {
             up.style.display = "none";
             down.style.display = "flex";
-            // data.style.display = "none";
             data.classList.remove("animatdata");
+        }
+        down1.onclick = function () {
+            down1.style.display = "none";
+            up1.style.display = "flex";
+            data1.classList.add("animatdata");
+        }
+        up1.onclick = function () {
+            up1.style.display = "none";
+            down1.style.display = "flex";
+            data1.classList.remove("animatdata");
         }
     </script>
 
