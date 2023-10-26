@@ -121,10 +121,10 @@
 }
 /* Dark and light mode */
 .btn{
-    width: 100%;
+    width: 99%;
     height: 0px;
     position: sticky;
-    top: 95vh;
+    top: 13vh;
     display: flex;
     align-items: center;
     padding: 0 33px;
